@@ -64,7 +64,6 @@ public class Main {
 
     public static void getByFaculty(ArrayList<Student> list) throws IOException {
         System.out.println("You're searching by a faculty. Please type a faculty below:");
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String faculty;
         HashSet<Student> set = new HashSet<>();
         while (true) {
@@ -88,7 +87,6 @@ public class Main {
 
     public static void getByYear(ArrayList<Student> list) throws IOException {
         System.out.println("You're searching a students younger than a given year of birthday. Please type a year below:");
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String year;
         HashSet<Student> set = new HashSet<>();
         while (true) {
@@ -117,7 +115,6 @@ public class Main {
 
     public static void getByGroup(ArrayList<Student> list) throws IOException {
         System.out.println("You're searching a students by a group. Please type a group below:");
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String group;
         HashSet<Student> set = new HashSet<>();
         while (true) {
@@ -129,7 +126,6 @@ public class Main {
             }
             if (set.isEmpty()) {
                 System.out.println("There's no students is this group");
-                break;
             } else {
                 for (Student student : set) {
                     System.out.println(student.getName() + " " + student.getSurname() + ", group: " + student.getGroup());
@@ -137,7 +133,6 @@ public class Main {
                 System.out.println();
                 break;
             }
-
         }
     }
 
